@@ -4,6 +4,16 @@ Using Gradle 5.0
 
 https://gradle.org/whats-new/gradle-5/
 
+## Agenda
+
+* Build a multi-module project with Gradle
+* Build information (aka profile/scan)
+* Incremental build
+* Dependency management
+* Separating API and implementation
+* Define a Gradle Task
+* Build a plugin
+
 ## Pre-requisites
 
 #### SDK Man
@@ -22,4 +32,6 @@ Install Java using SDKMAN
 ```bash
 sdk install java
 ```
+
+
 
