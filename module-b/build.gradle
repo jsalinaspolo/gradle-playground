@@ -1,13 +1,2 @@
-plugins {
-  id 'java'
-}
-
-sourceCompatibility = 1.8
-
-repositories {
-  jcenter()
-}
-
-dependencies {
-  testCompile 'junit:junit:4.12'
-}
+// dependency on project module-a
+// test dependency on 'org.spockframework:spock-core:1.2-groovy-2.5'
