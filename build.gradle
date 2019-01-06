@@ -1,2 +1,14 @@
-// add testLogging in subprojects
+// add required plugins
+
+// add configuration for subprojects
+// add testLogging on events as "PASSED", "SKIPPED", "FAILED"
+
+
+
+
+// DO NOT REMOVE - task to verify the step.
+
+tasks.register('verifyStep') {
+  assert subprojects*.test != []: "Subprojects should not be empty"
+}
 
