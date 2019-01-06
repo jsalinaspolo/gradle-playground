@@ -1,6 +1,6 @@
 # Gradle Playground
 
-Using Gradle 5.0 
+Using Gradle 5
 
 https://gradle.org/whats-new/gradle-5/
 
@@ -8,8 +8,8 @@ https://gradle.org/whats-new/gradle-5/
 
 * Build a multi-module project with Gradle
 * Build information (aka profile/scan)
-* Incremental build
 * Dependency management
+* Incremental build
 * Separating API and implementation
 * Define a Gradle Task
 * Build a plugin
@@ -19,12 +19,6 @@ https://gradle.org/whats-new/gradle-5/
 #### SDK Man
 Install [SDKMAN](https://sdkman.io/) following instructions [here](https://sdkman.io/install)
 
-#### Gradle
-Install [Gradle](https://gradle.org) using SDKMAN 
-
-```bash 
-sdk install gradle 5.0
-```
 
 #### Java
 Install Java using SDKMAN
@@ -32,6 +26,18 @@ Install Java using SDKMAN
 ```bash
 sdk install java
 ```
+
+#### Gradle
+
+Gradle recommends to execute any gradle build using the [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) 
+because standardises a project on a given Gradle version.
+
+Anyway, if you would like to have gradle locally, install [Gradle](https://gradle.org) using SDKMAN 
+
+```bash 
+sdk install gradle 5.1
+```
+
 
 
 
