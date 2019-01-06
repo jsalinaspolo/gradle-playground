@@ -1,5 +1,5 @@
-// add module-a
-// add module-b
+include 'module-b'
+include 'module-a'
 
 rootProject.name = 'gradle-playground'
 

@@ -1,2 +1,26 @@
-// add testLogging in subprojects
+subprojects {
+  apply plugin: 'java'
+
+  repositories {
+    jcenter()
+  }
+
+  test {
+    testLogging {
+      events "PASSED", "SKIPPED", "FAILED"
+    }
+
+    afterSuite { desc, result ->
+      if (desc.descriptor.id == ":module-b:test") {
+        assert result.testCount == 1: "Should run 1 test"
+        assert result.resultType == TestResult.ResultType.SUCCESS
+      }
+    }
+  }
+}
+
+// DO NOT REMOVE - task to verify the step.
+tasks.register('verifyStep') {
+  assert subprojects*.test != []: "Subprojects should not be empty"
+}
 

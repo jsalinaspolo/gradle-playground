@@ -1,2 +1,11 @@
-// dependency on project module-a
-// test dependency on 'org.spockframework:spock-core:1.2-groovy-2.5'
+plugins {
+  id 'groovy'
+}
+
+sourceCompatibility = 1.8
+
+dependencies {
+  compile project(":module-a")
+
+  testCompile 'org.spockframework:spock-core:1.2-groovy-2.5'
+}

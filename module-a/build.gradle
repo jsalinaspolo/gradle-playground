@@ -1,3 +1,12 @@
+plugins {
+  id 'java'
+}
 
-// dependency 'com.google.guava:guava:27.0.1-jre'
-// dependency 'org.apache.commons:commons-lang3:3.8.1'
+sourceCompatibility = 1.8
+
+dependencies {
+  compile 'com.google.guava:guava:27.0.1-jre'
+  compile 'org.apache.commons:commons-lang3:3.8.1'
+
+  testCompile 'org.spockframework:spock-core:1.2-groovy-2.5'
+}
