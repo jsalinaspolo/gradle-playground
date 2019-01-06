@@ -1,37 +1,18 @@
-# Gradle Playground
+## Build a multi-module project with Gradle
 
-Using Gradle 5.0 
+* Add sub-modules to `settings.gradle` as explains https://docs.gradle.org/current/userguide/tutorial_java_projects.html#sec:examples 
+* Add `dependencies` to `build.gradle` in each `module`
 
-https://gradle.org/whats-new/gradle-5/
-
-## Agenda
-
-* Build a multi-module project with Gradle
-* Build information (aka profile/scan)
-* Incremental build
-* Dependency management
-* Separating API and implementation
-* Define a Gradle Task
-* Build a plugin
-
-## Pre-requisites
-
-#### SDK Man
-Install [SDKMAN](https://sdkman.io/) following instructions [here](https://sdkman.io/install)
-
-#### Gradle
-Install [Gradle](https://gradle.org) using SDKMAN 
-
-```bash 
-sdk install gradle 5.0
+Verify it is working running
+```
+./gradlew check verifyStep
 ```
 
-#### Java
-Install Java using SDKMAN
+Reference: https://docs.gradle.org/current/userguide/tutorial_java_projects.html
 
-```bash
-sdk install java
-```
+
+
+
 
 
 
