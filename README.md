@@ -1,15 +1,18 @@
-## Build a multi-module project with Gradle
+## Build information (aka profile/scan)
 
-Add `modules` to `settings.gradle` as explains https://guides.gradle.org/creating-multi-project-builds/ 
-Add `dependencies` to `build.gradle` in each `module`
-
-
-Verify it is working running
+* Run Gradle Profile
 ```
-./gradlew check verifyStep
+./gradlew check --profile --parallel
 ```
 
-Reference: https://docs.gradle.org/current/userguide/tutorial_java_projects.html
+* Run Gradle Scan
+```
+./gradlew check --scan --parallel
+```
+
+Reference
+* https://guides.gradle.org/performance
+* https://guides.gradle.org/creating-build-scans
 
 
 
